@@ -1,118 +1,48 @@
+// importamos las variables
+@import './variables.scss';
+@import './header.scss';
 
-/* flexbox */
-.flex{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    // main {}
+}
+
+.flex {
     display: flex;
 }
-.row{
+.row {
     flex-direction: row;
 }
-.items{
+.items {
     align-items: center;
 }
-.center{
+.center {
     align-content: center;
     justify-content: center;
 }
-.space{
+.space {
     justify-content: space-around;
 }
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
-.column{
+.column {
     flex-flow: column;
 }
-
-/* Assets */
-$family-1:'Raleway', sans-serif;
-$family-2: 'Oswald', sans-serif;
-$family-3: 'Montserrat', sans-serif;
-
-$text: #434343;
-$text2: white;
-$call: #FF6700;
-$foot:#88B2E1;
-$atention: #0B478A;
-$quote: #000F1F;
-$close: #851919;
-
-$mobile:375px;
-$screen:1024px;
-
-
-/* 1920 x 1080 */
-body{
-    margin: 0 auto;
-    padding: 0%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-.container{
-    background: url(../../media/1.png) center no-repeat;
-    max-width: 100%;
-    /*height: 1084px;*/
-    background-size: cover;
-    display: block;
-    margin: auto;
-}
-nav{
-    width: 100%;
-    position: relative;
-    margin: 0px auto;
-    padding-top: 16px;
-    .menu{
-        text-align: center;
-        list-style: none;
-        font-family: $family-1;
-        font-size: 25px;
-        margin: 80px;
-        position: relative;
-        li{
-            margin: 0 50px;
-            a{
-                text-decoration: none;
-                color: $text2;
-            }
-        }
-    }
-
-}
-.titulo{
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    padding: 150px 0 300px 0;
-    
-    
-    h1{
-        margin: 0 auto;
-        padding: 32px 0px;
-        font-size: 60px;
-        line-height: 120%;
-        font-family: $family-3;
-        font-weight: 500;
-        color: $call;
-    }
-    .social{
-        margin: 0 auto;
-        position: relative;
-        font-size: 32px;
-        .social-BTN{
-            text-decoration: none;
-            color: $text2;
-            padding: 0px 16px;
-        }
-        
-    }
-    
-}
-.US{
+.US {
     max-width: 100%;
     position: relative;
     padding: 200px 0;
-    .txt-1{
+
+    .txt-1 {
         position: relative;
         width: 100%;
         margin: 0 auto;
@@ -124,11 +54,13 @@ nav{
         color: $quote;
         padding: 150px 50px 50px 50px;
     }
+
     .service {
-        .Be{
+        .Be {
             padding: 0 0 0 80px;
-            .p-be{
-                margin:5px;
+
+            .p-be {
+                margin: 5px;
                 font-family: $family-2;
                 font-weight: 700;
                 font-size: 50px;
@@ -136,14 +68,16 @@ nav{
                 line-height: 120%;
                 color: $atention;
             }
-            .be-1{
-                a{
+
+            .be-1 {
+                a {
                     text-decoration: none;
                     color: $quote;
                     font-size: 25px;
                     font-family: $family-1;
                     font-weight: 700;
                 }
+
                 margin: 16px 0 0 5px;
                 width: 90%;
                 height: 50px;
@@ -151,82 +85,94 @@ nav{
                 border-radius: 10px;
                 border-color: $call;
                 border-width: 3.5px;
-                
+
                 box-shadow: 0px 10px 40px -7px #7090B0;
             }
         }
-        .help{ 
+
+        .help {
             width: 50%;
             padding: 0 0 0 80px;
-            
-            h2{
+
+            h2 {
                 margin: 0 0 10px 0;
                 font-family: $family-2;
                 font-size: 40px;
                 font-weight: 100;
             }
-            .p2{
+
+            .p2 {
                 margin: 0 auto;
                 font-family: $family-1;
                 font-size: 20px;
                 line-height: 140%;
                 color: $text;
-    
-    
+
+
             }
         }
 
     }
 }
-.cards{
+
+.cards {
     margin: 0 auto;
     width: 100%;
     position: relative;
     background: url(../../media/2.png);
     background-position: center;
     padding: 80px 0px;
-   .card{
-       margin: 0 100px;
-       text-align: center;
-       padding: 60px 0 60px 0;
-       font-size: 50px;
-       i{
-        color:$call;
-        opacity: 55%;
-       }
-       h3{
-           margin: 16px;
-           font-size: 40px;
-           font-family: $family-2;
-           color: $text2
-       }
-       ul{ 
-           list-style: none;
-           font-size: 20px;
-           font-weight: bold;
-           font-family: $family-1;
-           color: lightgray;
-           padding: 20px 0 0 0;
-           hr{
-               color: lightgray;
-               margin: 15px 0;
-           }
-       }
-   }
+
+    .card {
+        margin: 0 100px;
+        text-align: center;
+        padding: 60px 0 60px 0;
+        font-size: 50px;
+
+        i {
+            color: $call;
+            opacity: 55%;
+        }
+
+        h3 {
+            margin: 16px;
+            font-size: 40px;
+            font-family: $family-2;
+            color: $text2
+        }
+
+        ul {
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $family-1;
+            color: lightgray;
+            padding: 20px 0 0 0;
+
+            hr {
+                color: lightgray;
+                margin: 15px 0;
+            }
+        }
+    }
 }
-.metodo{
+
+.metodo {
     position: relative;
     margin: 0 auto;
     max-width: 100%;
     padding: 250px 200px;
-    .foto3{
+
+    .foto3 {
         width: 100%;
         text-align: center;
     }
-    .mtd{
+
+    .mtd {
         width: 100%;
     }
-    .titu{
+
+    .titu {
         margin: 0 auto;
         padding: 30px 0 0 0;
         font-size: 50px;
@@ -234,7 +180,8 @@ nav{
         font-weight: 500;
         color: $atention;
     }
-    .Our{
+
+    .Our {
         margin: 0 auto;
         font-family: $family-1;
         font-size: 20px;
@@ -242,7 +189,8 @@ nav{
         color: $text;
         padding: 10px 0px;
     }
-    .coffe{
+
+    .coffe {
         margin: 0 auto;
         padding: 16px 0;
         font-family: $family-1;
@@ -251,7 +199,8 @@ nav{
         line-height: 140%;
         color: $quote
     }
-    .pasos{
+
+    .pasos {
         list-style: square;
         margin: 0 auto;
         padding: 20px 0 0 30px;
@@ -260,11 +209,13 @@ nav{
         color: $atention
     }
 }
-#Portfolio{
-    
+
+#Portfolio {
+
     padding-bottom: 150px;
 }
-.galery{
+
+.galery {
     font-family: $family-2;
     text-align: center;
     font-weight: 100;
@@ -272,22 +223,25 @@ nav{
     color: $atention;
     margin: 20px 0;
 }
-.galeria{
+
+.galeria {
     width: 85%;
     margin: auto;
     padding: 40px 20px;
     overflow: hidden;
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(768px, 1fr)) ;
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
     grid-gap: 15px;
-    img{
+
+    img {
         width: 100%;
         vertical-align: top;
         object-fit: cover;
         border-radius: 20px;
         transition: transform 0.8s;
     }
-    .effect{
+
+    .effect {
         margin: 16px;
         display: block;
         position: relative;
@@ -295,40 +249,43 @@ nav{
         border-radius: 20px;
         box-shadow: 0px 0px 10px $quote;
     }
-    .effect:hover img{
+
+    .effect:hover img {
         filter: blur(1.5px);
         transform: rotate(10deg) scale(1.3);
     }
 }
-.light-box{
+
+.light-box {
     align-content: center;
     justify-content: center;
     position: fixed;
     padding: 150px 0px;
     top: 0px;
     left: 0px;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
     transition: transform .5s ease-in-out;
     width: 100%;
     height: 100vh;
     z-index: 1000;
     transform: scale(0);
 
-    img{
+    img {
         width: 50vw;
         max-height: 50vh;
     }
-    .arrow{
+
+    .arrow {
         display: block;
         padding: 220px 50px;
         font-size: 50px;
         color: $text2;
         text-decoration: none;
-        
-        
+
+
     }
-  
-    .close{
+
+    .close {
         display: block;
         position: absolute;
         top: 50px;
@@ -340,15 +297,18 @@ nav{
 
 
 }
-.light-box:target{
+
+.light-box:target {
     transform: scale(1);
 }
-.contact{
+
+.contact {
     position: relative;
     margin: 0px;
     width: 50%;
     padding-bottom: 200px;
-    .Form{
+
+    .Form {
         position: relative;
         width: 60%;
         height: 80%;
@@ -356,42 +316,49 @@ nav{
         padding: 20px;
         font-family: $family-1;
     }
-    
-    .title{
+
+    .title {
         font-size: 40px;
         font-weight: 100;
         line-height: 140%;
         margin: 0px;
         color: $atention;
     }
-    .txt{
+
+    .txt {
         font-size: 20px;
         margin: 16px 0px;
     }
-    .field{
+
+    .field {
         margin: 20px 0px;
         font-size: 20px;
         line-height: 140%;
         font-weight: bold;
-        input, textarea{
+
+        input,
+        textarea {
             padding: 16px;
             margin: 5px 0px;
             height: 20px;
             resize: none;
             outline: none;
-            border: 2px solid #C2C2C2; 
+            border: 2px solid #C2C2C2;
             border-radius: 10px;
         }
-        abbr{
+
+        abbr {
             color: red;
             font-size: 30px;
         }
-        textarea{
+
+        textarea {
             height: 200px;
             margin-bottom: 50px;
         }
     }
-    .send{
+
+    .send {
         width: 80%;
         height: 50px;
         margin: 10px auto;
@@ -406,105 +373,114 @@ nav{
         box-shadow: 0px 10px 40px -7px #7090B0;
     }
 }
-.footer{
+
+.footer {
     width: 100%;
     position: relative;
     margin: 0px;
     background-color: #212121;
     font-family: $family-1;
-    .part-1{
+
+    .part-1 {
         position: relative;
         margin: 0 auto;
         width: 33%;
         padding: 50px 50px;
         border-left: 2.5px solid $text2;
         border-right: 2.5px solid $text2;
-        .caja{
+
+        .caja {
             text-align: center;
         }
-        .gator{
+
+        .gator {
             margin: 16px 0;
             font-family: $family-3;
             font-size: 32px;
             color: $call;
         }
-        .follow{
+
+        .follow {
             margin: 16px 0;
             text-align: center;
             color: $foot;
             font-size: 25px;
         }
-        .social{
+
+        .social {
             margin: 16px 0px;
             padding: 0 150px;
             font-size: 32px;
-            .social-BTN{
+
+            .social-BTN {
                 text-decoration: none;
                 color: $text2;
                 padding: 0 20px;
             }
-            
+
         }
     }
-   .part-2{
-    position: relative;
-    margin: 0px;
-    width: 33%;
-    padding: 120px 50px;
-    font-family: $family-1;
-    
-    .us-foot{
-        margin: 0px;
-        padding: 16px;
-        color: $foot;
-        font-size: 32px;
-        
-    }
-    .us-2{
-        margin: 16px 0px;
-        padding: 0px 16px;
-        font-size: 20px;
-        color: $text2;
-    }
-   }
-   .part-3{
-    position: relative;
-    margin: 0px;
-    width: 33%;
-    padding: 100px 50px;
-    .data{
+
+    .part-2 {
         position: relative;
-        width: 100%;
-        margin: 20px 0;
-    }
-    .icon{
-        font-size: 40px;
-        color: $text2;
-        padding: 20px;
-    }
-    .H{
-        font-size: 25px;
-        font-weight: 100;
         margin: 0px;
-        padding-top: 10px;
-        color: $foot;
+        width: 33%;
+        padding: 120px 50px;
+        font-family: $family-1;
+
+        .us-foot {
+            margin: 0px;
+            padding: 16px;
+            color: $foot;
+            font-size: 32px;
+
+        }
+
+        .us-2 {
+            margin: 16px 0px;
+            padding: 0px 16px;
+            font-size: 20px;
+            color: $text2;
+        }
     }
-    .P{
-        margin: 5px;
-        font-size: 25px;
-        font-weight: bold;
-        color: $text2;
-        
-        
+
+    .part-3 {
+        position: relative;
+        margin: 0px;
+        width: 33%;
+        padding: 100px 50px;
+
+        .data {
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: $text2;
+            padding: 20px;
+        }
+
+        .H {
+            font-size: 25px;
+            font-weight: 100;
+            margin: 0px;
+            padding-top: 10px;
+            color: $foot;
+        }
+
+        .P {
+            margin: 5px;
+            font-size: 25px;
+            font-weight: bold;
+            color: $text2;
+
+
+        }
     }
-   }
 
 }
 
 /* mediaquerys */
-@media (min-width: $mobile) and (max-width: $screen){
-
- 
-   
-}
-
+@media (min-width: $mobile) and (max-width: $screen) {}
