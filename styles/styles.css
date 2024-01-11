@@ -43,6 +43,7 @@ header nav ul.menu li a {
   text-decoration: none;
   color: rgb(243, 240, 240);
   position: relative;
+  font-weight: bold;
 }
 header nav ul.menu li a::before {
   content: "";
@@ -66,9 +67,8 @@ header div.titulo {
   padding: 150px 0 300px 0;
 }
 header div.titulo #apache {
-  width: 30rem;
-  height: 15rem;
-  z-index: 100;
+  width: 40rem;
+  height: 20rem;
 }
 header div.titulo .social {
   align-items: center;

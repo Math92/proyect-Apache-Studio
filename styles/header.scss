@@ -42,6 +42,7 @@ header {
                     text-decoration: none;
                     color: $text2;
                     position: relative;
+                    font-weight: bold;
 
                     &::before {
                         content: '';
@@ -71,9 +72,8 @@ header {
         padding: 150px 0 300px 0;
 
         #apache {
-            width: 30rem;
-            height: 15rem;
-            z-index: 100;
+            width: 40rem;
+            height: 20rem;
         }
 
         .social {
