@@ -1,0 +1,121 @@
+@import './variables.scss';
+
+.footer {
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    background-color: #212121;
+    font-family: $family-1;
+    display: flex;
+
+    .left-footer {
+        position: relative;
+        margin: 0px;
+        width: 33%;
+        padding: 120px 50px;
+        font-family: $family-1;
+
+        h3 {
+            margin: 0px;
+            padding: 16px;
+            color: $foot;
+            font-size: 32px;
+        }
+
+        p {
+            margin: 16px 0px;
+            padding: 0px 16px;
+            font-size: 20px;
+            color: $text2;
+        }
+    }
+
+    .center-footer {
+        position: relative;
+        margin: 0 auto;
+        width: 33%;
+        padding: 50px 50px;
+        border-left: 2.5px solid $text2;
+        border-right: 2.5px solid $text2;
+
+        .logo {
+            text-align: center;
+
+            h4 {
+                margin: 16px 0;
+                font-family: $family-3;
+                font-size: 32px;
+                color: $call;
+            }
+
+            p {
+                margin: 16px 0;
+                text-align: center;
+                color: $foot;
+                font-size: 25px;
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            margin: 2.5rem;
+            padding: 0 150px;
+            font-size: 32px;
+            justify-content: space-evenly;
+
+            a {
+                i {
+                    text-decoration: none;
+                    color: $text2;
+                    padding: 0 20px;
+
+                    &:hover {
+                        transform: rotate(15deg) scale(1.2);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .right-footer {
+        position: relative;
+        margin: 0px;
+        width: 33%;
+        padding: 100px 50px;
+
+        div {
+            display: flex;
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+
+            .icon {
+                font-size: 40px;
+                color: $text2;
+                padding: 20px;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+                
+                h3 {
+                    font-size: 25px;
+                    font-weight: 100;
+                    margin: 0px;
+                    padding-top: 10px;
+                    color: $foot;
+                }
+
+                p {
+                    margin: 5px;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: $text2;
+                }
+            }
+        }
+    }
+}

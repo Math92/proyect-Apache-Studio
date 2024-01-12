@@ -1,0 +1,100 @@
+.footer {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  background-color: #212121;
+  font-family: "Raleway", "Roboto", sans-serif;
+  display: flex;
+}
+.footer .left-footer {
+  position: relative;
+  margin: 0px;
+  width: 33%;
+  padding: 120px 50px;
+  font-family: "Raleway", "Roboto", sans-serif;
+}
+.footer .left-footer h3 {
+  margin: 0px;
+  padding: 16px;
+  color: #88B2E1;
+  font-size: 32px;
+}
+.footer .left-footer p {
+  margin: 16px 0px;
+  padding: 0px 16px;
+  font-size: 20px;
+  color: rgb(243, 240, 240);
+}
+.footer .center-footer {
+  position: relative;
+  margin: 0 auto;
+  width: 33%;
+  padding: 50px 50px;
+  border-left: 2.5px solid rgb(243, 240, 240);
+  border-right: 2.5px solid rgb(243, 240, 240);
+}
+.footer .center-footer .logo {
+  text-align: center;
+}
+.footer .center-footer .logo h4 {
+  margin: 16px 0;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-size: 32px;
+  color: #FF6700;
+}
+.footer .center-footer .logo p {
+  margin: 16px 0;
+  text-align: center;
+  color: #88B2E1;
+  font-size: 25px;
+}
+.footer .center-footer .social {
+  display: flex;
+  align-items: center;
+  margin: 2.5rem;
+  padding: 0 150px;
+  font-size: 32px;
+  justify-content: space-evenly;
+}
+.footer .center-footer .social a i {
+  text-decoration: none;
+  color: rgb(243, 240, 240);
+  padding: 0 20px;
+}
+.footer .center-footer .social a i:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+.footer .right-footer {
+  position: relative;
+  margin: 0px;
+  width: 33%;
+  padding: 100px 50px;
+}
+.footer .right-footer div {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+.footer .right-footer div .icon {
+  font-size: 40px;
+  color: rgb(243, 240, 240);
+  padding: 20px;
+}
+.footer .right-footer div article {
+  display: flex;
+  flex-direction: column;
+}
+.footer .right-footer div article h3 {
+  font-size: 25px;
+  font-weight: 100;
+  margin: 0px;
+  padding-top: 10px;
+  color: #88B2E1;
+}
+.footer .right-footer div article p {
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(243, 240, 240);
+}/*# sourceMappingURL=footer.css.map */
